@@ -7,8 +7,10 @@ public	class	IntegerExamplesTest	{
 
     @Test
     public	void	integerExploration(){
-        Integer four = new Integer("5");
-        assertEquals("int value returns five", 5, four.intValue());
+        Integer four = new Integer("4");
+        Integer five = new Integer("5");
+        assertEquals("int value returns four", 4, four.intValue());
+        assertEquals("int value returns five", 5, five.intValue());
         System.out.println("rgfed");
     }
     @Test
