@@ -19,4 +19,18 @@ public class UserTest {
         assertEquals("Default username expected","username",user.getUsername());
         assertEquals("Default password expected","password",user.getPassword());
     }
+    @Test
+    public void canConstructWithUsernameAdnPassword(){
+        User user = new User("admin","pA55w0rD");
+
+        assertEquals("Given username expected", "admin", user.getUsername());
+        assertEquals("Given password expected", "pA55w0rD", user.getPassword());
+    }
+
+    @Test
+    public void canSetPasswordAfterConstructed(){
+        User user = new User();
+        user.setPassword("PaZZwor6");
+        assertEquals("setter password expected","PaZZwor6", user.getPassword());
+    }
 }
