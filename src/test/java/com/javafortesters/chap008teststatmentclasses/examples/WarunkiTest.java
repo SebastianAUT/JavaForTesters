@@ -3,7 +3,7 @@ package com.javafortesters.chap008teststatmentclasses.examples;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class PetleTest {
+public class WarunkiTest {
     @Test
     public void metodapetli(){
         String url = "www.eviltester.com";
