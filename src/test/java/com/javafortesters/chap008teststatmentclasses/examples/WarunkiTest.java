@@ -37,4 +37,14 @@ public class WarunkiTest {
                     assertEquals("url rowna sie", "Http://www.seleniumsimplified.com", url);
     }
 
+    @Test
+    public void sprawdzifaels(){
+        String url = "www.seleniumsimplified.com";
+        if (url.startsWith("Http://")) {
+        }else{
+            url = addHttp(url);
+        }
+        assertEquals("url rowna sie", "Http://www.seleniumsimplified.com", url);
+    }
+
 }
