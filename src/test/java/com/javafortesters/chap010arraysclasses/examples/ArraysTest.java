@@ -8,6 +8,9 @@ import java.util.concurrent.SynchronousQueue;
 import static org.junit.Assert.assertEquals;
 
 public class ArraysTest {
+
+    String[] tablica = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+
     @Test
     public void testTablicy(){
         User[] uzytkownik = new User[3];
@@ -26,16 +29,13 @@ public class ArraysTest {
 
     @Test
     public void testpetli() {
-        String[] tablica = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
         for (String zmienna : tablica) {
             System.out.println(zmienna);
         }
-
     }
 
     @Test
     public void kolejnapetla(){
-        String[] tablica = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
         String lista = "";
 
         for(int i=0; i < 5; i++){
