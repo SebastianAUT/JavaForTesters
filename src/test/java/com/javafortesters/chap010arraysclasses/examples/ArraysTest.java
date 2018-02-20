@@ -32,4 +32,15 @@ public class ArraysTest {
         }
 
     }
+
+    @Test
+    public void kolejnapetla(){
+        String[] tablica = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+        String lista = "";
+
+        for(int i=0; i < 5; i++){
+            lista = lista + tablica[i];
+        }
+        System.out.println(lista);
+    }
 }
