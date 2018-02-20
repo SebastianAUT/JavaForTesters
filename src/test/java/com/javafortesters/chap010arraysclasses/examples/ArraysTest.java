@@ -43,4 +43,19 @@ public class ArraysTest {
         }
         System.out.println(lista);
     }
+
+
+    @Test
+    public void testtabloop(){
+        User[] uzytkownik = new User[100];
+        int j = 0;
+
+        for (User zmienna : uzytkownik) {
+            zmienna = new User("login" + j,"haslo" + j);
+
+            assertEquals("name", "haslo" + j, zmienna.getPassword());
+
+            j++;
+        }
+    }
 }
